@@ -1,0 +1,44 @@
+  - platform: command_line
+    switches:
+      htd_sw_zone1:
+        command_on: 'python3 /config/scripts/htd-lync12.py power 1 on'
+        command_off: 'python3 /config/scripts/htd-lync12.py power 1 off'
+        friendly_name: "Kitchen"
+        value_template: "{{ value_json.power }}"
+        command_timeout: "15"
+        command_state: "python3 /config/scripts/htd-lync12.py query zone 1"
+      htd_sw_zone2:
+        command_on: 'python3 /config/scripts/htd-lync12.py power 2 on'
+        command_off: 'python3 /config/scripts/htd-lync12.py power 2 off'
+        friendly_name: "En-Suite"
+        value_template: "{{ value_json.power }}"
+        command_timeout: "15"
+        command_state: "python3 /config/scripts/htd-lync12.py query zone 2"
+      htd_sw_zone3:
+        command_on: 'python3 /config/scripts/htd-lync12.py power 3 on'
+        command_off: 'python3 /config/scripts/htd-lync12.py power 3 off'
+        friendly_name: "Craft-Room"
+        value_template: "{{ value_json.power }}"
+        command_timeout: "15"
+        command_state: "python3 /config/scripts/htd-lync12.py query zone 3"
+      htd_sw_zone4:
+        command_on: 'python3 /config/scripts/htd-lync12.py power 4 on'
+        command_off: 'python3 /config/scripts/htd-lync12.py power 4 off'
+        friendly_name: "Back Yard"
+        value_template: "{{ value_json.power }}"
+        command_timeout: "15"
+        command_state: "python3 /config/scripts/htd-lync12.py query zone 4"
+      htd_sw_zone5:
+        command_on: 'python3 /config/scripts/htd-lync12.py power 5 on'
+        command_off: 'python3 /config/scripts/htd-lync12.py power 5 off'
+        friendly_name: "Basement"
+        value_template: "{{ value_json.power }}"
+        command_timeout: "15"
+        command_state: "python3 /config/scripts/htd-lync12.py query zone 5"
+      htd_sw_zone6:
+        command_on: 'python3 /config/scripts/htd-lync12.py power 6 on'
+        command_off: 'python3 /config/scripts/htd-lync12.py power 6 off'
+        friendly_name: "Garage"
+        value_template: "{{ value_json.power }}"
+        command_timeout: "15"
+        command_state: "python3 /config/scripts/htd-lync12.py query zone 6"
