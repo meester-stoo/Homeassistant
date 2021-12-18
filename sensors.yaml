@@ -1,0 +1,78 @@
+  - platform: command_line
+    name: htd_zone1
+    scan_interval: 45
+    json_attributes:
+      - dnd
+      - idx
+      - mute
+      - name
+      - power
+      - source
+      - source_name
+      - volume
+    command: "python3 /config/scripts/htd-lync12.py query zone 1"
+  - platform: command_line
+    name: htd_zone2
+    scan_interval: 50
+    json_attributes:
+      - dnd
+      - idx
+      - mute
+      - name
+      - power
+      - source
+      - source_name
+      - volume
+    command: "python3 /config/scripts/htd-lync12.py query zone 2"
+  - platform: command_line
+    name: htd_zone3
+    scan_interval: 55
+    json_attributes:
+      - dnd
+      - idx
+      - mute
+      - name
+      - power
+      - source
+      - source_name
+      - volume
+    command: "python3 /config/scripts/htd-lync12.py query zone 3"
+  - platform: command_line
+    name: htd_zone4
+    scan_interval: 45
+    json_attributes:
+      - dnd
+      - idx
+      - mute
+      - name
+      - power
+      - source
+      - source_name
+      - volume
+    command: "python3 /config/scripts/htd-lync12.py query zone 4"
+  - platform: command_line
+    name: htd_zone5
+    scan_interval: 55
+    json_attributes:
+      - dnd
+      - idx
+      - mute
+      - name
+      - power
+      - source
+      - source_name
+      - volume
+    command: "python3 /config/scripts/htd-lync12.py query zone 5"
+  - platform: command_line
+    name: htd_zone6
+    scan_interval: 50
+    json_attributes:
+      - dnd
+      - idx
+      - mute
+      - name
+      - power
+      - source
+      - source_name
+      - volume
+    command: "python3 /config/scripts/htd-lync12.py query zone 6"
